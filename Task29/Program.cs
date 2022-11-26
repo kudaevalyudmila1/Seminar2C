@@ -5,19 +5,19 @@
 
 
 Console.WriteLine("Введите  размер массива:");
-int N = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите  минимальное значение рандомного числа:");
 int minimum = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите  максимальное значение рандомного числа:");
 int maximum = Convert.ToInt32(Console.ReadLine());
 
-int[] array = new int[N];
-void FillArray(int[] arr)
+int[] array = new int[n];
+void FillArray(int[] arr, int min, int max)
 {
     Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rnd.Next(minimum, maximum + 1);
+        arr[i] = rnd.Next(min, max + 1);
     }
 }
 void PrintArray(int[] arr)
@@ -31,5 +31,5 @@ void PrintArray(int[] arr)
     }
     Console.Write("]");
 }
-FillArray(array);
+FillArray(array, minimum, maximum);
 PrintArray(array);
