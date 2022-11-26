@@ -25,17 +25,16 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
-int [] InversionElem(int[] array)
+void InversionElem(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
         {
             array[i] = -array[i];
         }
-    return array;
 }
 int[] arr = CreateArrayRndInt(10, -20, 20);
 PrintArray(arr);
 
-int[] newarr = InversionElem(arr);
-PrintArray(newarr);
+InversionElem(arr);
+PrintArray(arr);
 
