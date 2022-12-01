@@ -32,7 +32,6 @@ else
 {
     double coordinatesAbscissa = СoordinatesAbscissa(k1, k2, b1, b2);
     double coordinatesX = Math.Round(coordinatesAbscissa, 2);
-
     double coordinatesOrdinate = СoordinatesOrdinate(coordinatesAbscissa, k1, b1);
     double coordinatesY = Math.Round(coordinatesOrdinate, 2);
     Console.Write($"k1 = {k1}, b1 = {b1}, k2 = {k2}, b2 = {b2}");
