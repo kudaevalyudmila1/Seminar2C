@@ -27,7 +27,6 @@ double СoordinatesOrdinate(double xd, double ka1, double bc1)
 
 if (k1 == k2 && b1 == b2) Console.WriteLine("Прямые совпадают.");
 else if (k1 == k2) Console.WriteLine("Прямые не пересекаются.");
-
 else
 {
     double coordinatesAbscissa = СoordinatesAbscissa(k1, k2, b1, b2);
