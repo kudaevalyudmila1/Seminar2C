@@ -45,7 +45,7 @@ int[,] SortingMaxToMin(int[,] array)
         {
             for (int k = 0; k < array.GetLength(1); k++)
             {
-                if (array[i, j] <= array[i, k])
+                if (array[i, j] >= array[i, k])
                 {
                     int temp = array[i, j];
                     array[i, j] = array[i, k];
