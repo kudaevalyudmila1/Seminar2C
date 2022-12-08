@@ -50,7 +50,6 @@ int[,] MatrixProduct(int[,] matrA, int[,] matrB)
     return newarr;
 }
 
-
 int[,] matrixA = CreateMatrixRndInt(2, 4, 1, 9);
 int[,] matrixB = CreateMatrixRndInt(4, 3, 1, 9);
 PrintMatrix(matrixA);
