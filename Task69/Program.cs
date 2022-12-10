@@ -15,6 +15,5 @@ int Exponentiation(int numA, int numB)
     if(numB == 0) return 1;
     return numA * Exponentiation(numA, numB - 1);
 }
-
 int result = Exponentiation(numberA, numberB);
 Console.WriteLine($"A ={numberA}, B = {numberB} -> {result}");
