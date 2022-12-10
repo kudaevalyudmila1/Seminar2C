@@ -12,7 +12,7 @@ int numberM = Convert.ToInt32(Console.ReadLine());
 
 int SumNaturalNumbers(int numN, int numM)
 {
-    if (numN == numM +1) return 0;
+    if (numN == numM + 1) return 0;
     return numN + SumNaturalNumbers(numN + 1, numM);
 }
 
